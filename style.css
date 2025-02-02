@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+
+*{
+    padding: 0;
+    box-sizing: 0;
+    margin: 0;
+    font-family: "Quicksand", serif;
+   font-optical-sizing: auto;
+  font: weight 600;
+  font-style: normal;
+}
+
+
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff4d4d;
+    padding-right: 20px;
+
+    
+}
+
+
+nav ul{
+    display: flex;
+
+}
+
+nav ul li {
+    margin: 10px;
+    list-style-type: none;
+    font-size: 18px;
+  
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+nav h1{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    padding-left: 20px;
+    margin-top: 15px;
+
+}
+
+
+
+.search-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    
+}
+
+search-container input {
+    padding: 10px
+
+}
+
+
+.search-container button{
+    background-color: #eb1515;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+.center{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+.center button{
+    background-color: #eb1515;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+/* Styling for the products section */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Product container */
+.product {
+    width: 20%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* Product image */
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 1px;
+    margin-bottom: 15px;
+}
+
+/* Product title */
+.product h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Product description */
+.product p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+
+/* Responsive design: stack products on smaller screens */
+@media (max-width: 768px) {
+    .product {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+/* Form part start */
+
+/* General form styling */
+.form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+.form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input field styling */
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="phone"],
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form textarea {
+    resize: vertical;
+}
+
+/* Radio button and label styling */
+.form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form label[for="male"],
+.form label[for="female"] {
+    display: inline;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+/* Submit button styling */
+.form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #45a049;
+}
